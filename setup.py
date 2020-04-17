@@ -6,11 +6,6 @@ from setuptools import setup
 with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
     README = readme.read()
 
-if sys.version_info < (3, 0, 0):
-    django = 'django>=1.11.29,<2.0'
-else:
-    django = 'django>=2.0,<3.2'  # checked https://docs.djangoproject.com/en/dev/releases/3.1/#backwards-incompatible-3-1
-
 requirements = [
     django,
     'stream-python>=3.0.1',
