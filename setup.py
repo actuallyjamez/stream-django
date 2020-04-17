@@ -7,7 +7,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
     README = readme.read()
 
 requirements = [
-    django,
+    'django',
     'stream-python>=3.0.1',
     'pytz'
 ]
